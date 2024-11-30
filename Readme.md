@@ -15,6 +15,7 @@ The following diagram illustrates the architecture and data flow:
 4. Processed data is output to Azure Blob Storage for storage and analys
 
 ### 3. Architecture Diagram
+![image](https://github.com/user-attachments/assets/a2cffdff-1724-4e72-b364-571ffc1ea57e)
 
 ### 4. Implementation Details
 
