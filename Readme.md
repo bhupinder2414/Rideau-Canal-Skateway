@@ -10,7 +10,7 @@ The following diagram illustrates the architecture and data flow:
    
 2. Azure IoT Hub ingests real-time sensor data.
 
-3. Azure Stream Analytics processes the data, performing aggregations over a 5-minute window.
+3. Azure Stream Analytics processes the data, performing aggregations over a minute window.
    
 4. Processed data is output to Azure Blob Storage for storage and analys
 
