@@ -19,7 +19,7 @@ The following diagram illustrates the architecture and data flow:
 
 ### 4. Implementation Details
 
-#### 1. IOT Sesnor Simulation
+#### 1. IOT Sensor Simulation
 The simulated IoT sensors are actual equipment positioned at three strategic points along the Rideau Canal Skateway: the NAC, Fifth Avenue, and Dow's Lake. These sensors are intended to keep an eye on important ice-related and environmental parameters, protecting skaters.
 
 ### How It Works:
@@ -31,7 +31,7 @@ The simulated IoT sensors are actual equipment positioned at three strategic poi
    
 4. Continuous Data Flow: New data is pushed every ten seconds as the script runs endlessly.
 
-### IOT Hub Configuration
+### 2. IOT Hub Configuration
 1. Device Registration with Device id (dows_lake, fifth_avenue, nac_sensors)
 
 2. Connection string to send the data
@@ -40,3 +40,20 @@ The simulated IoT sensors are actual equipment positioned at three strategic poi
 
 ### OutCome
 Real-time data is received by the IoT Hub, processed by Azure Stream Analytics, aggregated, and stored in Azure Blob Storage.
+
+### 3. Azure Stream Analytics Job
+Azure IoT Hub serves as the primary ingestion point for the simulated IoT sensor data, and the input for the Stream Analytics job is set up to receive data from it.
+
+1. Aggregates data over a minute window for each location.
+
+2. It shows average thickness and maximum snow accumulation.
+
+### OutCome
+After processing, the results are sent to Azure Blob Storage for additional examination and preservation.
+
+### 4. Azure Blob Storage
+1. The processed data is stored in Azure Blob Storage in JSON format.
+
+2. Set up this container as the output destination for Stream Analytics.
+
+3. Browse and download saved data for additional analysis using the Azure Portal.
