@@ -1,4 +1,4 @@
-### IOT Sensors
+## IOT Sensors
 ![Screenshot (35)](https://github.com/user-attachments/assets/c5b9ed13-0967-4cc6-bb68-9e1294176769)
 
 ![Screenshot (37)](https://github.com/user-attachments/assets/35c0fe94-15b5-4d85-9bf1-791cc91c2969)
@@ -13,7 +13,7 @@
 
 ![Screenshot (53)](https://github.com/user-attachments/assets/af8c28c7-89d6-4036-bfe2-275c8451d417)
 
-### Stream Analytics Job
+## Stream Analytics Job
 
 ![Screenshot (39)](https://github.com/user-attachments/assets/5243baac-0499-428d-9658-03e49b152749)
 
@@ -27,7 +27,7 @@
 
 ![Screenshot (48)](https://github.com/user-attachments/assets/41ab2609-3184-427a-b358-41c4db8fe918)
 
-### Azure Blob Storage
+## Azure Blob Storage
 
 ![Screenshot (36)](https://github.com/user-attachments/assets/504aebd3-3e72-410d-bb99-2517687ea81c)
 
