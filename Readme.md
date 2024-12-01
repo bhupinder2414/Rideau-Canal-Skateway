@@ -6,13 +6,14 @@ The three main locations—Dow's Lake, Fifth Avenue, and NAC—are used by this 
 ### 2. System Architecture
 The following diagram illustrates the architecture and data flow:
 
-1. IoT Sensors simulate and send JSON payloads every 10 seconds to Azure IoT Hub.
+1. IoT Sensors: Generates data every 10 seconds for ice thickness, surface temperature, snow accumulation, and external temperature.
+2. Azure IoT Hub: Receives data from simulated sensors.
+3. Azure Stream Analytics: Processes data in real time, calculating:
    
-2. Azure IoT Hub ingests real-time sensor data.
-
-3. Azure Stream Analytics processes the data, performing aggregations over a minute window.
+      - Average ice thickness over 5 minutes.
    
-4. Processed data is output to Azure Blob Storage for storage and analys
+      - Maximum snow accumulation over 5 minutes.
+5. Azure Blob Storage: Stores processed data for analysis.
 
 ### 3. Architecture Diagram
 ![image](https://github.com/user-attachments/assets/a2cffdff-1724-4e72-b364-571ffc1ea57e)
@@ -20,12 +21,13 @@ The following diagram illustrates the architecture and data flow:
 ### 4. Key Files:
 Sensor simulation files Dows_Lake_sensor.py,Fifth_Avenue_sensor.py and NAC_sensor.py
 
-     -Located in the sensor-simulation/ folder.
+     -Located in the sensor-simulation/ folder
 **Running the Simulation:**
 1. Install dependencies:
    
         -pip install azure-iot-device
-2. Run the script:
+   
+3. Run the script:
 
        -python3 Dows_Lake_sensor.py
        -python3 Fifth_Avenue_sensor.py
