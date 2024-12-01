@@ -1,19 +1,19 @@
-## IOT Sensors
+# Building Azure IoT Hub 
 ![Screenshot (35)](https://github.com/user-attachments/assets/c5b9ed13-0967-4cc6-bb68-9e1294176769)
-
+# Deploy Azure IoT Hub
 ![Screenshot (37)](https://github.com/user-attachments/assets/35c0fe94-15b5-4d85-9bf1-791cc91c2969)
-
+# Adding Devices in IOT Hub
 ![Screenshot (54)](https://github.com/user-attachments/assets/bbf70b19-33d1-47df-a245-461752ab8d3f)
-
+# Running Dow's_Lake_sensor.py simulation 
 ![Screenshot (40)](https://github.com/user-attachments/assets/0181126c-ea2a-4ca3-871f-0b186d574fe2)
-
+# Running Fifth_Avenue_sensor.py simulation
 ![Screenshot (41)](https://github.com/user-attachments/assets/3fa0221e-a640-4f3e-ac77-c9d8853a633c)
-
+# Running NAC_sensor.py simulation
 ![Screenshot (42)](https://github.com/user-attachments/assets/66ad2d95-505a-4c98-81f7-1cb248f65057)
-
+# Receiving Messages in IOT Hub
 ![Screenshot (53)](https://github.com/user-attachments/assets/af8c28c7-89d6-4036-bfe2-275c8451d417)
 
-## Stream Analytics Job
+# Stream Analytics Job
 
 ![Screenshot (39)](https://github.com/user-attachments/assets/5243baac-0499-428d-9658-03e49b152749)
 
@@ -27,7 +27,7 @@
 
 ![Screenshot (48)](https://github.com/user-attachments/assets/41ab2609-3184-427a-b358-41c4db8fe918)
 
-## Azure Blob Storage
+# Azure Blob Storage
 
 ![Screenshot (36)](https://github.com/user-attachments/assets/504aebd3-3e72-410d-bb99-2517687ea81c)
 
