@@ -1,9 +1,13 @@
-### 1. Description
+# Rideau Canal Skateway Monitoring System
+### 1. Introduction
 The Rideau Canal Skateway, a historic attraction in Ottawa, requires constant monitoring to ensure skater safety. Our team has been commissioned by the National Capital Commission (NCC) to create a real-time monitoring system that tracks vital weather and ice conditions using Internet of Things (IoT) sensors, giving actionable insights to identify dangerous skating conditions.
 
 The three main locations—Dow's Lake, Fifth Avenue, and NAC—are used by this system to mimic Internet of Things sensors that produce data on ice thickness, surface temperature, snow accumulation, and external temperature. Azure IoT Hub and Azure Stream Analytics are used to process the data in real time, while Azure Blob Storage is used to store the data for analysis and reporting.
 
-### 2. System Architecture
+### 2. Overview
+The Rideau Canal Skateway Monitoring System ensures the safety of skaters by continuously monitoring ice and weather conditions at key locations along the canal. Using simulated IoT sensors, Azure IoT Hub, Azure Stream Analytics, and Azure Blob Storage, this system processes and stores real-time data for further analysis
+
+### 3. System Architecture
 The following diagram illustrates the architecture and data flow:
 
 1. IoT Sensors: Generates data every 10 seconds for ice thickness, surface temperature, snow accumulation, and external temperature.
@@ -15,25 +19,26 @@ The following diagram illustrates the architecture and data flow:
       - Maximum snow accumulation over 5 minutes.
 5. Azure Blob Storage: Stores processed data for analysis.
 
-### 3. Architecture Diagram
+### 4. Architecture Diagram
 ![image](https://github.com/user-attachments/assets/a2cffdff-1724-4e72-b364-571ffc1ea57e)
 
-### 4. Key Files:
+### 5. Key Files:
 Sensor simulation files Dows_Lake_sensor.py,Fifth_Avenue_sensor.py and NAC_sensor.py
 
      -Located in the sensor-simulation/ folder
 **Running the Simulation:**
+
 1. Install dependencies:
    
         -pip install azure-iot-device
    
-3. Run the script:
+2. Run the script:
 
        -python3 Dows_Lake_sensor.py
        -python3 Fifth_Avenue_sensor.py
        -python3 NAC_sensor.py
    
-### 5. Implementation Details
+### 6. Implementation Details
 
 #### 1. IOT Sensor Simulation
 The simulated IoT sensors are actual equipment positioned at three strategic points along the Rideau Canal Skateway: the NAC, Fifth Avenue, and Dow's Lake. These sensors are intended to keep an eye on important ice-related and environmental parameters, protecting skaters.
@@ -67,7 +72,7 @@ Azure IoT Hub serves as the primary ingestion point for the simulated IoT sensor
 ### Outcome
 After processing, the results are sent to Azure Blob Storage for additional examination and preservation.
 
-### 6. Azure Blob Storage
+### 4. Azure Blob Storage
 1. The processed data is stored in Azure Blob Storage in JSON format.
 
 2. Set up this container as the output destination for Stream Analytics.
