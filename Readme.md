@@ -26,19 +26,36 @@ The following diagram illustrates the architecture and data flow:
 Sensor simulation files Dows_Lake_sensor.py,Fifth_Avenue_sensor.py and NAC_sensor.py
 
      -Located in the sensor-simulation/ folder
-**Running the Simulation:**
+     
+### 6. Running the IoT Sensor Simulation:
 
-1. Install dependencies:
-   
-        -pip install azure-iot-device
-   
-2. Run the script:
+**1. Clone the repository:**
+       
+     git clone https://github.com/rhythmsh05/Rideau-Canal-Skateway
+     
+     cd Rideau_Canal_Skateway
 
-       -python3 Dows_Lake_sensor.py
-       -python3 Fifth_Avenue_sensor.py
-       -python3 NAC_sensor.py
+**2. Install dependencies:**
    
-### 6. Implementation Details
+      pip install -r requirements.txt
+   
+**3. Run the scripts one by one:**
+
+      cd sensor-simulation
+   
+      python3 Dows_Lake_sensor.py
+   
+      python3 Fifth_Avenue_sensor.py
+
+      python3 NAC_sensor.py
+   
+ **5. Accessing Processed Data**
+    
+  1. Go to the Azure Blob Storage container in the Azure Portal.
+   
+  2. Download and view the JSON files.
+   
+### 7. Implementation Details
 
 #### 1. IOT Sensor Simulation
 The simulated IoT sensors are actual equipment positioned at three strategic points along the Rideau Canal Skateway: the NAC, Fifth Avenue, and Dow's Lake. These sensors are intended to keep an eye on important ice-related and environmental parameters, protecting skaters.
